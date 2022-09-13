@@ -1,0 +1,3 @@
+Error[1027] E:\MyWork\PDU\LIU-0816\Code\20120613\include\TCPIP Stack\TCPIP.h 60 : unable to locate 'HardwareProfile.h'
+Error[1027] E:\MyWork\PDU\LIU-0816\Code\20120613\include\TCPIP Stack\TCPIP.h 82 : unable to locate 'TCPIPConfig.h'
+Error[1099] E:\MyWork\PDU\LIU-0816\Code\20120613\include\TCPIP Stack\StackTsk.h 65 : Invlaid MAX_UDP_SOCKETS value specified

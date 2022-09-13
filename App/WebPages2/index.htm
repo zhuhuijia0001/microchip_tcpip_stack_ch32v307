@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>FreeDesign EthernetController Panels</title>
+</head>
+
+<body>
+<div align="center">
+  <p>&nbsp;</p>
+  <table width="52%" border="0">
+    <tr> 
+      <td width="100%" colspan="2"> <div align="left"></div>
+        <div align="left"><font color="#66CC33" size="+5" face="Times New Roman, Times, serif"><strong><font size="+3">FreeDesign</font><font color="#FFFFFF">-</font></strong><font color="#333333" size="4" face="黑体">------- 
+          以太网学习板</font></font></div></td>
+    </tr>
+    <tr> 
+      <td height="53" colspan="2"> <p align="left">日期：20~YR~年 ~MH~月~DA~日<font color="#FFFFFF">--</font>时间：~HR~:~ME~<font color="#000000">:~SD~</font><font color="#FFFFFF">-</font></p>
+        <p align="left">室温：~TP~<font color="#000000" size="3"> ℃</font></p>
+		<input type=button value=刷新 onclick="location.reload()"> 
+        <p align="center">&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td height="42" colspan="2"> 
+        <form name="form1" method="get" action="index.htm">
+          <p name="select"> 本地设备1: 
+            <select name="dev0"><option value="1" ~devSelected(0,TRUE)~>ON</option><option value="0" ~devSelected(0,FALSE)~>OFF</option></select>
+            <font color="#FFFFFF"> -</font> 本地设备2: 
+			<select name="dev1"><option value="1" ~devSelected(1,TRUE)~>ON</option><option value="0" ~devSelected(1,FALSE)~>OFF</option></select>
+            <font color="#FFFFFF">----</font> </p>
+          <p name="select">
+            <input name="Submit1" type="submit" id="Submit1" value="提交">
+          </p>
+          </form></td>
+    </tr>
+    <tr> 
+      <td height="27" colspan="2">远程设备：</td>
+    </tr>
+    <tr> 
+      <td height="24" colspan="2"> <table width="91%" height="25" border="0">
+          <tr> 
+            <td width="10%"><div align="center"><font color="#333333" size="4"><strong>D1</strong></font></div></td>
+            <td width="14%"><div align="center"><font color="#333333" size="4"><strong>D2</strong></font></div></td>
+            <td width="12%"><div align="center"><font color="#333333" size="4"><strong>D3</strong></font></div></td>
+            <td width="14%"><div align="center"><font color="#333333" size="4"><strong>D4</strong></font></div></td>
+            <td width="14%"><div align="center"><font color="#333333" size="4"><strong>D5</strong></font></div></td>
+            <td width="11%"><div align="center"><font color="#333333" size="4"><strong>D6</strong></font></div></td>
+            <td width="10%"><div align="center"><font color="#333333" size="4"><strong>D7</strong></font></div></td>
+            <td width="15%"><div align="center"><font color="#333333" size="4"><strong>D8</strong></font></div></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr> 
+      <td colspan="2"><form name="form2" method="get" action="index.htm">
+          <p> 
+			<select name="led0"><option value="1" ~ledSelected(0,TRUE)~>ON</option><option value="0" ~ledSelected(0,FALSE)~>OFF</option></select>
+			<select name="led1"><option value="1" ~ledSelected(1,TRUE)~>ON</option><option value="0" ~ledSelected(1,FALSE)~>OFF</option></select>
+			<select name="led2"><option value="1" ~ledSelected(2,TRUE)~>ON</option><option value="0" ~ledSelected(2,FALSE)~>OFF</option></select>
+			<select name="led3"><option value="1" ~ledSelected(3,TRUE)~>ON</option><option value="0" ~ledSelected(3,FALSE)~>OFF</option></select>
+			<select name="led4"><option value="1" ~ledSelected(4,TRUE)~>ON</option><option value="0" ~ledSelected(4,FALSE)~>OFF</option></select>
+			<select name="led5"><option value="1" ~ledSelected(5,TRUE)~>ON</option><option value="0" ~ledSelected(5,FALSE)~>OFF</option></select>
+			<select name="led6"><option value="1" ~ledSelected(6,TRUE)~>ON</option><option value="0" ~ledSelected(6,FALSE)~>OFF</option></select>
+			<select name="led7"><option value="1" ~ledSelected(7,TRUE)~>ON</option><option value="0" ~ledSelected(7,FALSE)~>OFF</option></select>
+          </p>
+          <p> 
+            <input name="Submit2" type="submit" id="Submit2" value="提交">
+          </p>
+        </form>
+<form method="post" action="index.htm">
+<div class="examplebox">
+<b>留言板:</b> <input type="text" name="lcd" maxlength="32"> &nbsp; <input type="submit" value="提交">
+</div>
+</form>
+      </td>
+    </tr>
+    
+  </table>
+</div>
+</body>
+</html>
